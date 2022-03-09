@@ -1,0 +1,41 @@
+curl and libcurl 7.82.1
+
+ Public curl releases:         207
+ Command line options:         245
+ curl_easy_setopt() options:   295
+ Public functions in libcurl:  86
+ Contributors:                 2597
+
+This release includes the following changes:
+
+ o
+
+This release includes the following bugfixes:
+
+ o CI: install Python package impacket to run SMB test 1451 [5]
+ o connect: use TCP_KEEPALIVE only if TCP_KEEPIDLE is not defined [6]
+ o curl/system.h: update ifdef condition for MCST-LCC compiler [4]
+ o docs/HYPER.md: updated to reflect current hyper build needs
+ o GHA: build hyper with nightly rustc [7]
+ o ipv4/6.d: clarify that they are about using IP addresses [3]
+ o runtests: make 'oldlibssh' be before 0.9.4 [2]
+
+This release includes the following known bugs:
+
+ o see docs/KNOWN_BUGS (https://curl.se/docs/knownbugs.html)
+
+This release would not have looked like this without help, code, reports and
+advice from friends like these:
+
+  Daniel Stenberg, Marc Hörsken, Michał Antoniak, Paul Howarth,
+  r-a-sattarov on github
+  (5 contributors)
+
+References to bug reports and discussions on issues:
+
+ [2] = https://curl.se/bug/?i=8548
+ [3] = https://curl.se/bug/?i=8543
+ [4] = https://curl.se/bug/?i=8546
+ [5] = https://curl.se/bug/?i=8544
+ [6] = https://curl.se/bug/?i=8539
+ [7] = https://curl.se/bug/?i=8545
